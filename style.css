@@ -1,0 +1,323 @@
+body {
+	background-color: #bba56a;
+	width: 1000px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+	color: white;
+	font-family: Comic Sans MS;
+	line-height: 9px;
+}
+
+#header_nav {
+	float: right;
+	color: white;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#header_nav a:link, #header_nav a:active, #nav a:link, #nav a:active {
+	color: white;
+	text-decoration: none;
+}
+#header_nav a:visited, #nav a:visited {
+	color: white;
+	text-decoration: none;
+}
+#header_nav a:hover, #nav a:hover {
+	color: silver;
+	text-decoration: none;
+}
+
+#header a:link, #header a:active, #header a:visited, #header a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+#nav {
+	float: left;
+	color: white;
+	padding: 10px;
+	height: 410px;
+}
+
+#nav h3 {
+	line-height: 1px;
+	text-align: left;
+}
+
+.ul_nav {
+	list-style-type: none;
+	margin: 5px;
+	line-height: 25px;
+	float: inherit;
+}
+
+.il_nav {
+	text-align: left;
+	margin-left: -30px;
+}
+
+#inhoud {
+	padding: 10px;
+	text-align: left;
+	background-color: white;
+	float: right;
+	width: 840px;
+	height: 80%;
+	margin-bottom: 20px;
+}
+
+#footer {
+	padding: 0 6px 12px;
+	margin-top: 15px;
+	padding-top: 15px;
+	text-align: center;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.Article {
+	width: 800px;
+	height: 100px;
+	color: black;
+	line-height: 20px;
+}
+
+.Article a:link, .Article a:active, .Article a:visited, .Article a:hover {
+	color: black;
+	text-decoration: none;
+} 
+
+.N_Kop {
+	font-weight: bold;
+	font-family: 'Verdana'
+}
+
+.Art_Img {
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin-right: 20px;
+}
+
+.Intro {
+	font-weight: bold;
+}
+
+/*POKEMON CSS*/
+
+@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+
+/* pokemone pictures */
+
+.pokemon {
+  width: 200px;
+  height: 100px;
+  /* center content using flex box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overlay */
+  box-shadow: 0 0 0 100px inset, 0 0 5px grey;
+  /* hover out transition */
+  transition: box-shadow 1s;
+  float: left;
+  margin: 10px;
+}
+
+
+/* pokemone names */
+
+.pokemon::after {
+  width: 90%;
+  height: 80%;
+  display: block;
+  white-space: pre;
+  font: 12pt 'sigmar one';
+  color: white;
+  border: 2px solid;
+  text-align: center;
+  /* center content using flex box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* hover out transition */
+  transition: opacity 1s .5s;
+}
+
+
+/* reveal pokemone picture on hover */
+
+.pokemon:hover {
+  box-shadow: 0 0 0 5px inset, 0 0 5px grey, 0 0 10px grey inset;
+  transition: box-shadow 1s;
+}
+
+
+/* hide pokemone name on hover */
+
+.pokemon:hover::after {
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+#bulbasaur {
+  background-image: url(http://vignette4.wikia.nocookie.net/pokemon/images/2/21/001Bulbasaur.png/revision/latest/scale-to-width-down/200?cb=20140328190757);
+  color: rgba(71, 121, 94, .9);
+}
+
+#bulbasaur::after {
+  content: 'Evolution';
+}
+
+#charmander {
+  background-image: url(http://vignette2.wikia.nocookie.net/pokemon/images/7/73/004Charmander.png/revision/latest/scale-to-width-down/200?cb=20140724195345);
+  color: rgba(221, 86, 63, .9);
+}
+
+#charmander::after {
+  content: 'Size'
+}
+
+#squirtle {
+  background-image: url(http://vignette2.wikia.nocookie.net/pokemon/images/3/39/007Squirtle.png/revision/latest/scale-to-width-down/200?cb=20140328191525);
+  color: rgba(65, 102, 114, .9);
+}
+
+#squirtle::after {
+  content: 'Attack'
+}
+
+#pikachu {
+  background-image: url(http://vignette2.wikia.nocookie.net/pokemon/images/0/0d/025Pikachu.png/revision/latest/scale-to-width-down/200?cb=20140328192412);
+  color: rgba(179, 152, 98, .9);
+}
+
+#pikachu::after {
+  content: 'Special Results'
+}
+
+
+#wrapper {
+  width: 500px;
+  height: 500px;
+  margin:  auto;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Amarante');
+
+/*html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html { overflow-y: scroll; }*/
+
+::selection { background: #5f74a0; color: #fff; }
+::-moz-selection { background: #5f74a0; color: #fff; }
+::-webkit-selection { background: #5f74a0; color: #fff; }
+
+br { display: block; line-height: 1.6em; } 
+
+/*article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }*/
+
+input, textarea { 
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none; 
+}
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong, b { font-weight: bold; } 
+
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; }
+
+/*h1 { 
+  font-family: 'Amarante', Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 3.6em;
+  line-height: 1.7em;
+  margin-bottom: 10px;
+  text-align: center;
+}*/
+
+
+/** page structure **/
+#wrapper {
+  display: block;
+  width: 850px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 10px 17px;
+  -webkit-box-shadow: 2px 2px 3px -1px rgba(0,0,0,0.35);
+}
+
+#keywords {
+  margin: 0 auto;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+
+#keywords thead {
+  cursor: pointer;
+  background: #c9dff0;
+}
+#keywords thead tr th { 
+  font-weight: bold;
+  padding: 12px 30px;
+  padding-left: 42px;
+}
+#keywords thead tr th span { 
+  padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+#keywords thead tr th.headerSortUp, #keywords thead tr th.headerSortDown {
+  background: #acc8dd;
+}
+
+#keywords thead tr th.headerSortUp span {
+  background-image: url('https://i.imgur.com/SP99ZPJ.png');
+}
+#keywords thead tr th.headerSortDown span {
+  background-image: url('https://i.imgur.com/RkA9MBo.png');
+}
+
+
+#keywords tbody tr { 
+  color: #555;
+}
+#keywords tbody tr td {
+  text-align: center;
+  padding: 15px 10px;
+}
+#keywords tbody tr td.lalign {
+  text-align: left;
+}
+
+
+@import "compass/css3";
+
+
