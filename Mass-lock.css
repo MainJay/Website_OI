@@ -1,0 +1,129 @@
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+html,body{
+font-family:Verdana,sans-serif;
+font-size:15px;
+line-height:1.5
+}
+h1{
+font-family:"Segoe UI",Arial,sans-serif;
+font-weight:400;
+margin:10px
+}
+.letter-afstand{
+letter-spacing:4px
+}
+.lock-foto{
+max-width:100%;
+height:auto;
+}
+img{
+vertical-align:middle}
+a{
+color:inherit
+}
+.lock-button{
+border:none;
+display:inline-block;
+outline:0;
+padding:8px 16px;
+vertical-align:middle;
+overflow:hidden;
+text-decoration:none;
+color:inherit;
+background-color:inherit;
+text-align:center;
+cursor:pointer;
+white-space:nowrap
+}
+.lock-weergave-container{position:relative
+}
+.lock-row-padding:after,
+.lock-bar:after{content:"";display:table;clear:both
+}
+.lock-col{float:left;width:100%
+}
+.lock-col.l3{width:24.99999%}
+.lock-content{max-width:980px;margin:auto
+}
+@media (max-width:600px){
+.lock-button{width:100%}
+}
+.lock-top{position:fixed;width:100%;z-index:1;top:0
+}
+.lock-weergave-topleft{position:absolute;left:0;top:0
+}
+.lock-weergave-middle{position:absolute;top:54%;left:52%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)
+}
+.lock-row-padding,.lock-row-padding>.lock-half,.lock-row-padding>.lock-row-padding>.lock-row-padding>.lock-row-padding>.lock-quarter,.lock-row-padding>.lock-col{padding:0 8px
+}
+
+.lock-center{text-align:center}
+.lock-border{border:1px solid #ccc}
+.lock-border-bottom{border-bottom:1px solid #ccc}
+.lock-section,.lock-code{margin-top:16px;margin-bottom:16px}
+.lock-margin-top{margin-top:14px}
+.lock-margin-bottom{margin-bottom:16px}
+
+.lock-padding{
+padding:8px 16px
+}
+.lock-padding-16{
+padding-top:16px;
+padding-bottom:16px
+}
+.lock-padding-32{
+padding-top:32px;
+padding-bottom:32px
+}
+.lock-rechts{
+float:right
+}
+.lock-wit{
+color:#000;
+background-color:#fff
+}
+.lock-zwart{
+color:#fff;background-color:#787878
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* contact pagina om te contacteren*/
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
